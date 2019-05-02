@@ -22,7 +22,8 @@
 }
 
 .slidecontainer {
-  width: 100%; /* Width of the outside container */
+  width: 200px; /* Width of the outside container */
+  margin: 0 40px 25px 0;
 }
 
 /* The slider itself */
