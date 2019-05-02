@@ -1,3 +1,6 @@
+New filters added. Slider added to modify the effect of the filter
+Tested and working in Firefox 66.0.3 and Chrome 74.0.3729.131
+
 # mediaLab4
 
 This lab aims to build your first WebRTC app.
