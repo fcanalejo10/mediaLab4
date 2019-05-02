@@ -107,7 +107,7 @@
     </select>
 
     <button id="snapshot">Take snapshot</button>
-    <input type="range" id="myRange" value="0" onchange="handleSlider()" >
+    <input type="range" id="myRange" value="0" min="0" max="100" onchange="handleSlider()" >
     <script>
     function handleSlider () {
 	    var x = document.getElementById("myRange").value;
