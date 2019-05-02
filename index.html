@@ -38,38 +38,38 @@
         }
 
         .grayscale {
-            -webkit-filter: grayscale(var(--x)/100);
-            filter: grayscale(var(--x)/100);
+            -webkit-filter: grayscale(var(--x));
+            filter: grayscale(var(--x));
         }
 
         .invert {
-            -webkit-filter: invert(var(--x)/100);
-            filter: invert(var(--x)/100);
+            -webkit-filter: invert(var(--x));
+            filter: invert(var(--x));
         }
 
         .sepia {
-            -webkit-filter: sepia(var(--x)/100);
-            filter: sepia(var(--x)/100);
+            -webkit-filter: sepia(var(--x));
+            filter: sepia(var(--x));
         }
         .brightness {
-		  	-webkit-filter: brightness(var(--x)/100);
-		  	filter: brightness(var(--x)/100);
+		  	-webkit-filter: brightness(var(--x));
+		  	filter: brightness(var(--x));
 		}
 		.contrast {
-  			-webkit-filter: contrast(var(--x)/100);
-  			filter: contrast(var(--x)/100);
+  			-webkit-filter: contrast(var(--x));
+  			filter: contrast(var(--x));
 		}
 		.saturate {
-		  	-webkit-filter: saturate(var(--x)/100);
+		  	-webkit-filter: saturate(var(--x));
 		  	filter: saturate(var(--x));
 		}
         .opacity {
-  			-webkit-filter: opacity(var(--x)/100);
-  			filter: opacity(var(--x)/100);
+  			-webkit-filter: opacity(var(--x));
+  			filter: opacity(var(--x));
 		}
 		.hue-rotate {
 		  	-webkit-filter: hue-rotate(var(--x)*3.6);
-		  	filter: hue-rotate(var(--x));
+		  	filter: hue-rotate(var(--x)*3.6);
 		}
 
         button#snapshot {
@@ -99,11 +99,11 @@
         <option value="grayscale">Grayscale</option>
         <option value="invert">Invert</option>
         <option value="sepia">Sepia</option>
-        <option value="brightness">None</option>
-        <option value="contrast">Blur</option>
-        <option value="saturate">Grayscale</option>
-        <option value="opacity">Invert</option>
-        <option value="rotation">Sepia</option>
+        <option value="brightness">Brightness</option>
+        <option value="contrast">Contrast</option>
+        <option value="saturate">Saturate</option>
+        <option value="opacity">Opacity</option>
+        <option value="rotation">Rotation</option>
     </select>
 
     <button id="snapshot">Take snapshot</button>
