@@ -56,12 +56,12 @@
 		  	filter: brightness(var(--x));
 		}
 		.contrast {
-  			-webkit-filter: contrast(var(--x)+0.5);
-  			filter: contrast(var(--x)+0.5);
+  			-webkit-filter: contrast(var(--x));
+  			filter: contrast(var(--x));
 		}
 		.saturate {
-		  	-webkit-filter: saturate(var(--x)+0.5);
-		  	filter: saturate(var(--x)+0.5);
+		  	-webkit-filter: saturate(var(--x));
+		  	filter: saturate(var(--x));
 		}
         	.opacity {
   			-webkit-filter: opacity(var(--x));
@@ -106,7 +106,7 @@
     </select>
 
     <button id="snapshot">Take snapshot</button>
-    <input type="range" id="myRange" value="0" min="0" max="1" step="0.01" onchange="handleSlider()" >
+    <input type="range" id="myRange" value="0" min="0" max="2" step="0.01" onchange="handleSlider()" >
     <script>
     function handleSlider () {	    
 	    var x = document.getElementById("myRange").value;
