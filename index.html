@@ -61,7 +61,9 @@
             object-fit: cover;
         }
         canvas {
-            object-fit: cover;
+            margin-left: 230px;
+            margin-top: 220px;
+            position: absolute;
         }
     </style>
 
@@ -86,7 +88,7 @@
 
     <button id="snapshot">Take snapshot</button>
 
-    <canvas><canvas id="canvas" style="margin-left: 100px"></canvas> 
+    <canvas><canvas id="canvas" width="320" height="240"></canvas> 
 
     <p>Draw a frame from the getUserMedia video stream onto the canvas element, then apply CSS filters.</p>
 
