@@ -60,16 +60,16 @@
   			filter: contrast(var(--x));
 		}
 		.saturate {
-		  	-webkit-filter: saturate(var(--x));
-		  	filter: saturate(var(--x));
+		  	-webkit-filter: saturate(calc(var(--x) * 5));
+		  	filter: saturate(calc(var(--x) * 5));
 		}
         	.opacity {
   			-webkit-filter: opacity(var(--x));
   			filter: opacity(var(--x));
 		}
 		.hue-rotate {
-		  	-webkit-filter: hue-rotate(var(--x)*360);
-		  	filter: hue-rotate(var(--x)*360);
+		  	-webkit-filter: hue-rotate(calc(var(--x)*360));
+		  	filter: hue-rotate(calc(var(--x)*360));
 		}
 
         button#snapshot {
