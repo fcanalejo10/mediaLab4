@@ -33,39 +33,39 @@
         }
 
         .blur {
-            -webkit-filter: blur(var(--x)*0.05px);
-            filter: blur(var(--x)*0.05px);
+            -webkit-filter: blur(var(--x)*0.1);
+            filter: blur(var(--x)*0.1);
         }
 
         .grayscale {
-            -webkit-filter: grayscale(var(--x));
-            filter: grayscale(var(--x));
+            -webkit-filter: grayscale(var(--x)/100);
+            filter: grayscale(var(--x)/100);
         }
 
         .invert {
-            -webkit-filter: invert(var(--x));
-            filter: invert(var(--x));
+            -webkit-filter: invert(var(--x)/100);
+            filter: invert(var(--x)/100);
         }
 
         .sepia {
-            -webkit-filter: sepia(var(--x));
-            filter: sepia(var(--x));
+            -webkit-filter: sepia(var(--x)/100);
+            filter: sepia(var(--x)/100);
         }
         .brightness {
-		  	-webkit-filter: brightness(var(--x));
-		  	filter: brightness(var(--x));
+		  	-webkit-filter: brightness(var(--x)/100);
+		  	filter: brightness(var(--x)/100);
 		}
 		.contrast {
-  			-webkit-filter: contrast(var(--x));
-  			filter: contrast(var(--x));
+  			-webkit-filter: contrast(var(--x)/100);
+  			filter: contrast(var(--x)/100);
 		}
 		.saturate {
-		  	-webkit-filter: saturate(var(--x));
+		  	-webkit-filter: saturate(var(--x)/100);
 		  	filter: saturate(var(--x));
 		}
         .opacity {
-  			-webkit-filter: opacity(var(--x));
-  			filter: opacity(var(--x));
+  			-webkit-filter: opacity(var(--x)/100);
+  			filter: opacity(var(--x)/100);
 		}
 		.hue-rotate {
 		  	-webkit-filter: hue-rotate(var(--x)*3.6);
