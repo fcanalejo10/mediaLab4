@@ -21,6 +21,7 @@
   font-weight: 400;
 }
 
+<<<<<<< HEAD
 .slidecontainer {
   width: 200px; /* Width of the outside container */
   margin: 0 40px 25px 0;
@@ -61,6 +62,8 @@
   cursor: pointer; /* Cursor on hover */
 }
 
+=======
+>>>>>>> parent of 9f2e910... add slider and delete style of vifdeo and canvas
 @media screen and (min-width: 1000px) {
   /* hack! to detect non-touch devices */
   div#links a {
@@ -105,6 +108,12 @@ button[disabled] {
 
 button[disabled]:hover {
   background-color: #d84a38;
+}
+
+canvas {
+  background-color: #ccc;
+  max-width: 100%;
+  width: 100%;
 }
 
 code {
@@ -256,6 +265,14 @@ strong {
 textarea {
   resize: none;
   font-family: 'Roboto', sans-serif;
+}
+
+video {
+  background: #222;
+  margin: 0 0 20px 0;
+  --width: 100%;
+  width: var(--width);
+  height: calc(var(--width) * 0.75);
 }
 
 ul {
