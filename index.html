@@ -51,6 +51,26 @@
             -webkit-filter: sepia(1);
             filter: sepia(1);
         }
+        .brightness {
+		  	-webkit-filter: brightness(var(--value));
+		  	filter: brightness(var(--value));
+		}
+		.contrast {
+  			-webkit-filter: contrast(var(--value));
+  			filter: contrast(var(--value));
+		}
+		.saturate {
+		  	-webkit-filter: saturate(var(--value));
+		  	filter: saturate(var(--value));
+		}
+        .opacity {
+  			-webkit-filter: opacity(var(--value));
+  			filter: opacity(var(--value));
+		}
+		.hue-rotate {
+		  	-webkit-filter: hue-rotate(var(--value));
+		  	filter: hue-rotate(var(--value));
+		}
 
         button#snapshot {
             margin: 0 10px 25px 0;
@@ -79,6 +99,11 @@
         <option value="grayscale">Grayscale</option>
         <option value="invert">Invert</option>
         <option value="sepia">Sepia</option>
+        <option value="brightness">None</option>
+        <option value="contrast">Blur</option>
+        <option value="saturate">Grayscale</option>
+        <option value="opacity">Invert</option>
+        <option value="rotation">Sepia</option>
     </select>
 
     <button id="snapshot">Take snapshot</button>
