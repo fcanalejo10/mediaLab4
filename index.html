@@ -33,43 +33,43 @@
         }
 
         .blur {
-            -webkit-filter: blur(3px);
-            filter: blur(3px);
+            -webkit-filter: blur(var(--x)*0.05px);
+            filter: blur(var(--x)*0.05px);
         }
 
         .grayscale {
-            -webkit-filter: grayscale(1);
-            filter: grayscale(1);
+            -webkit-filter: grayscale(var(--x));
+            filter: grayscale(var(--x));
         }
 
         .invert {
-            -webkit-filter: invert(1);
-            filter: invert(1);
+            -webkit-filter: invert(var(--x));
+            filter: invert(var(--x));
         }
 
         .sepia {
-            -webkit-filter: sepia(1);
-            filter: sepia(1);
+            -webkit-filter: sepia(var(--x));
+            filter: sepia(var(--x));
         }
         .brightness {
-		  	-webkit-filter: brightness(var(--value));
-		  	filter: brightness(var(--value));
+		  	-webkit-filter: brightness(var(--x));
+		  	filter: brightness(var(--x));
 		}
 		.contrast {
-  			-webkit-filter: contrast(var(--value));
-  			filter: contrast(var(--value));
+  			-webkit-filter: contrast(var(--x));
+  			filter: contrast(var(--x));
 		}
 		.saturate {
-		  	-webkit-filter: saturate(var(--value));
-		  	filter: saturate(var(--value));
+		  	-webkit-filter: saturate(var(--x));
+		  	filter: saturate(var(--x));
 		}
         .opacity {
-  			-webkit-filter: opacity(var(--value));
-  			filter: opacity(var(--value));
+  			-webkit-filter: opacity(var(--x));
+  			filter: opacity(var(--x));
 		}
 		.hue-rotate {
-		  	-webkit-filter: hue-rotate(var(--value));
-		  	filter: hue-rotate(var(--value));
+		  	-webkit-filter: hue-rotate(var(--x)*3.6);
+		  	filter: hue-rotate(var(--x));
 		}
 
         button#snapshot {
@@ -107,7 +107,13 @@
     </select>
 
     <button id="snapshot">Take snapshot</button>
-
+    <input type="range" id="myRange" value="0" onchange="handleSlider()" >
+    <script>
+    function handleSlider () {
+	    var x = document.getElementById("myRange").value;
+	    document.documentElement.style.setProperty('--x', x);
+    }
+    </script>
     <canvas></canvas>
 
     <p>Draw a frame from the getUserMedia video stream onto the canvas element, then apply CSS filters.</p>
@@ -121,7 +127,5 @@
 
 <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
 <script src="js/main.js" async></script>
-
-<script src="../../../js/lib/ga.js"></script>
 </body>
 </html>
